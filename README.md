@@ -1,4 +1,3 @@
-# LefatleStudios-Client-Details-for-Website
 # 🚀 LefatleStudios Client Onboarding System
 
 > **LefatleStudio's client details for website** is a premium, high-end multi-step web questionnaire built with vanilla HTML, CSS, and JavaScript. It streamlines the client onboarding pipeline by collecting highly comprehensive project parameters and compiling them instantly into an optimized Markdown README file, transmitted directly to the developer via WhatsApp Business.
