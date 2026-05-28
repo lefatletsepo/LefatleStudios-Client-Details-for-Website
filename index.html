@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LefatleStudio's Client Details for Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <header>
+            <h1>LefatleStudio's</h1>
+            <h2>Client Details for Website</h2>
+            <p>To help us bring your digital vision to life, please fill out this detailed project questionnaire.</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="step active" data-step="1">1</div>
+            <div class="step" data-step="2">2</div>
+            <div class="step" data-step="3">3</div>
+            <div class="step" data-step="4">4</div>
+        </div>
+
+        <form id="projectForm">
+            <div class="form-step active" id="step-1">
+                <h3>Step 1: Business & Contact Information</h3>
+                <hr>
+                <div class="input-group">
+                    <label for="fullName">Full Name / Primary Contact *</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="input-group">
+                    <label for="companyName">Company / Brand Name *</label>
+                    <input type="text" id="companyName" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number (WhatsApp preferred)</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="input-group">
+                    <label for="currentUrl">Current Website URL (if applicable)</label>
+                    <input type="url" id="currentUrl" placeholder="https://">
+                </div>
+                <div class="input-group">
+                    <label for="socials">Social Media Handles</label>
+                    <input type="text" id="socials" placeholder="@brandname">
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn next-btn">Next Step</button>
+                </div>
+            </div>
+
+            <div class="form-step" id="step-2">
+                <h3>Step 2: Project Overview & Scope</h3>
+                <hr>
+                <div class="input-group">
+                    <label for="businessNature">What is the core nature of your business? (Products/Services)</label>
+                    <textarea id="businessNature" rows="3"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="websiteGoal">What is the primary goal of this new website? *</label>
+                    <textarea id="websiteGoal" rows="2" placeholder="e.g., Generate leads, sell products, showcase portfolio" required></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label>What pages do you require? (Select all that apply)</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="pages" value="Home"> Home</label>
+                        <label><input type="checkbox" name="pages" value="About Us"> About Us</label>
+                        <label><input type="checkbox" name="pages" value="Services"> Services</label>
+                        <label><input type="checkbox" name="pages" value="Portfolio"> Portfolio/Gallery</label>
+                        <label><input type="checkbox" name="pages" value="Blog"> Blog</label>
+                        <label><input type="checkbox" name="pages" value="Contact"> Contact</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Advanced Features Needed:</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="features" value="E-commerce"> E-commerce/Shop</label>
+                        <label><input type="checkbox" name="features" value="Booking"> Booking Calendar</label>
+                        <label><input type="checkbox" name="features" value="User Accounts"> User Login Portal</label>
+                        <label><input type="checkbox" name="features" value="Custom API"> Custom API Integrations</label>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn prev-btn">Previous</button>
+                    <button type="button" class="btn next-btn">Next Step</button>
+                </div>
+            </div>
+
+            <div class="form-step" id="step-3">
+                <h3>Step 3: Visual Aesthetic & Assets</h3>
+                <hr>
+                <div class="input-group">
+                    <label>Do you have an existing brand identity (Logo, Colors, Fonts)?</label>
+                    <select id="brandIdentity">
+                        <option value="yes">Yes (I will provide the assets)</option>
+                        <option value="no">No (I need LefatleStudios to design this)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>What is the desired style/vibe of the website?</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="vibe" value="Modern"> Ultra-modern & Sleek</label>
+                        <label><input type="checkbox" name="vibe" value="Premium"> Premium & Luxury</label>
+                        <label><input type="checkbox" name="vibe" value="Futuristic"> Futuristic / Tech</label>
+                        <label><input type="checkbox" name="vibe" value="Minimalist"> Soft & Organic</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="inspiration">Links to 2-3 websites you love (and why):</label>
+                    <textarea id="inspiration" rows="3" placeholder="1. url.com - love the layout&#10;2. url2.com - love the fonts"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label>Website Copywriting (Text Content):</label>
+                    <select id="copywriting">
+                        <option value="providing">I will provide all written text.</option>
+                        <option value="needed">I need help writing/refining content.</option>
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn prev-btn">Previous</button>
+                    <button type="button" class="btn next-btn">Next Step</button>
+                </div>
+            </div>
+
+            <div class="form-step" id="step-4">
+                <h3>Step 4: Logistics, Tech & Budget</h3>
+                <hr>
+                <div class="input-group">
+                    <label>Do you already own a domain name?</label>
+                    <select id="domainOwned">
+                        <option value="yes">Yes</option>
+                        <option value="no">No (I need help purchasing one)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="launchDate">Ideal Launch Date</label>
+                    <input type="date" id="launchDate">
+                </div>
+
+                <div class="input-group">
+                    <label for="budget">Allocated Budget ($ or ZAR)</label>
+                    <input type="text" id="budget" placeholder="e.g., R15,000 / $1,000">
+                </div>
+
+                <div class="input-group">
+                    <label for="driveLink">Link to your assets (Google Drive / Dropbox / Logo files)</label>
+                    <input type="url" id="driveLink" placeholder="https://drive.google.com/...">
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn prev-btn">Previous</button>
+                    <button type="submit" class="btn submit-btn">Submit Project Details</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
